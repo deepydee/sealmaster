@@ -1,6 +1,11 @@
 @import "fonts";
 @import "vars";
 
+body {
+  font-family: 'Noto Sans';
+  line-height: 1.6;
+}
+
 .brand-logo {
   height: 40px;
 }
@@ -44,8 +49,6 @@
   }
 }
 
-
-
 .social {
   .icon {
     margin-right: 8px;
@@ -58,4 +61,58 @@
 
 .carousel-item {
   transition: transform 2s ease, opacity .5s ease-out;
+}
+
+.overlay {
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: hsl(223, 82%, 11%);
+    opacity: 0.6;
+    z-index: 1;
+  }
+}
+
+.carousel-caption {
+  left: 15%;
+  top: 10%;
+  text-align: left;
+  z-index: 2;
+
+  @media (max-width: 575.98px) {
+    text-align: center;
+  }
+}
+
+.slide-heading {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: var(--bs-gutter-x);
+
+  @media (max-width: 991.98px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 575.98px) {
+    font-size: 24px;
+    margin-bottom: calc(var(--bs-gutter-x) * 0.5);
+  }
+}
+
+.slide-description {
+  font-size: 20px;
+
+  @media (max-width: 991.98px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 992px) {
+    margin-bottom: 64px;
+  }
 }
