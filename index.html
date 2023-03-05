@@ -25,9 +25,11 @@
 <body>
   <header>
     <!-- place navbar here -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-        <a class="navbar-brand" href="#">СИЛМАСТЕР</a>
+        <a class="navbar-brand" href="#">
+          <img src="img/logo-main.png" alt="ТОО Силмастер" class="brand-logo">
+        </a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,24 +37,75 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link active" href="#" aria-current="page">Главная <span class="visually-hidden">(текущая)</span></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-              <div class="dropdown-menu" aria-labelledby="dropdownId">
-                <a class="dropdown-item" href="#">Action 1</a>
-                <a class="dropdown-item" href="#">Action 2</a>
-                <a class="dropdown-item" href="#">Action 3</a>
+              <a class="nav-link dropdown-toggle" href="#" id="production" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Производство</a>
+              <div class="dropdown-menu" aria-labelledby="production">
+                <a class="dropdown-item" href="#">Манжеты и уплотнения</a>
+                <a class="dropdown-item" href="#">РВД и шланги</a>
+                <a class="dropdown-item" href="#">Маслостанции</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="goods" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Товары</a>
+              <div class="dropdown-menu" aria-labelledby="goods">
+                <a class="dropdown-item" href="#">Уплотнения Kastas</a>
+                <a class="dropdown-item" href="#">Гидрокомпоненты</a>
+                <a class="dropdown-item" href="#">Пневмокомпоненты</a>
+                <a class="dropdown-item" href="#">Ремкомплекты гидроцилиндров</a>
+                <a class="dropdown-item" href="#">Металлорукава</a>
+                <a class="dropdown-item" href="#">Стальные трубки</a>
+                <a class="dropdown-item" href="#">Запчасти</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="goods" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ремонт</a>
+              <div class="dropdown-menu" aria-labelledby="goods">
+                <a class="dropdown-item" href="#">Ремонт гидроцилиндров</a>
+                <a class="dropdown-item" href="#">Ремонт пневмоцилиндров</a>
+                <a class="dropdown-item" href="#">Ремонт маслостанций</a>
+                <a class="dropdown-item" href="#">Ремонт гидронасосов</a>
+                <a class="dropdown-item" href="#">Ремонт пневмонасосов</a>
+                <a class="dropdown-item" href="#">Ремонт моторов</a>
+                <a class="dropdown-item" href="#">Ремонт гидрораспределителей</a>
+                <a class="dropdown-item" href="#">Ремонт гидромолотов</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Академия</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Блог</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="goods" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Компания</a>
+              <div class="dropdown-menu" aria-labelledby="goods">
+                <a class="dropdown-item" href="#"><span class="icon icon-phone-out"></span>О компании</a>
+                <a class="dropdown-item" href="#"><span class="icon icon-phone-out"></span>Новости</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="goods" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Контакты</a>
+              <div class="dropdown-menu" aria-labelledby="goods">
+                <a class="dropdown-item" href="tel:+77764407004"><span class="icon icon-phone-out"></span> +7 (776) 440 70 04</a>
+                <a class="dropdown-item" href="tel:+77076026021"><span class="icon icon-phone-out"></span> +7 (707) 602-60-21</a>
+                <a class="dropdown-item" href="https://wa.me/77764407004?text=Здравствуйте%2C+у+меня+есть+вопрос" target="_blank"><span class="icon icon-wa"></span> Написать в Whatsapp</a>
+                <a href="#" class="dropdown-item">
+                  <!-- Modal trigger button -->
+                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalAskPhoneCall">
+                    <span class="icon icon-phone-in"></span> Обратный звонок
+                  </button>
+                </a>
               </div>
             </li>
           </ul>
-          <form class="d-flex my-2 my-lg-0">
-            <input class="form-control me-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          <div class="social">
+            <a href="http://www.instagram.com/sealmasterkz/" title="ТОО Силмастер в Instagram"><span class="icon icon-inst"></span></a>
+            <a href="http://t.me/sealmasterkz" title="ТОО Силмастер в Telegram"><span class="icon icon-tg"></span></a>
+            <a href="https://wa.me/77764407004?text=Здравствуйте%2C+у+меня+есть+вопрос" title="Напишите нам в Watsupp"><span class="icon icon-wa" target="_blank"></span></a>
+            <a href="https://www.youtube.com/@user-ng3jr8ss1b" title="Youtube канал ТОО Силмастер" target="_blank"><span class="icon icon-yt"></span></a>
+          </div>
         </div>
       </div>
     </nav>
@@ -121,10 +174,49 @@
           </button>
       </div>
     </div>
+    <div class="container">
+      <div class="row">
+                 
+
+      </div>
+    </div>
+
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="modalAskPhoneCall" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalAskPhoneCallTitleId" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalAskPhoneCallTitleId">Перезвоните мне</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <p>Оставьте контактные данные и наш менеджер с радостью перезвонит и ответит на все интересующие Вас вопросы</p>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control" name="userName" id="userName" placeholder="Ваше имя (необязательно)">
+                <label for="userName">Ваше имя (необязательно)</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="tel"
+                  class="form-control" name="userPhone" id="userPhone" placeholder="+7(747)123-45-67" required>
+                <label for="userPhone">Ваш телефон</label>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Заказать звонок</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
     <!-- place footer here -->
-    
+
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

@@ -46,11 +46,44 @@
   font-weight: 700;
   src: local("Roboto"), url("../fonts/roboto-v30-cyrillic_latin-700.woff2") format("woff2"), url("../fonts/roboto-v30-cyrillic_latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-.btn {
-  --bs-btn-border-radius: 0;
-  --bs-btn-hover-bg: hsl(204, 100%, 89%);
-  --bs-btn-hover-border-color: hsl(204, 96%, 81%);
-  --bs-btn-hover-color: hsl(204, 92%, 50%);
+.brand-logo {
+  height: 40px;
+}
+
+.icon {
+  display: inline-block;
+  content: "";
+  height: 16px;
+  width: 16px;
+  vertical-align: -0.125em;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  transition: all 0.4s ease;
+}
+.icon-phone-out {
+  background-image: url("../img/icons/telephone-outbound.svg");
+}
+.icon-wa {
+  background-image: url("../img/icons/whatsapp.svg");
+}
+.icon-inst {
+  background-image: url("../img/icons/instagram.svg");
+}
+.icon-tg {
+  background-image: url("../img/icons/telegram.svg");
+}
+.icon-yt {
+  background-image: url("../img/icons/youtube.svg");
+}
+.icon-phone-in {
+  background-image: url("../img/icons/telephone-inbound.svg");
+}
+.icon:hover {
+  filter: invert(30%) sepia(69%) saturate(4467%) hue-rotate(197deg) brightness(92%) contrast(98%);
+}
+
+.social .icon {
+  margin-right: 8px;
 }
 
 .slider {
