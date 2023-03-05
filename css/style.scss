@@ -1,0 +1,17 @@
+@import "fonts";
+@import "vars";
+
+.btn {
+  --bs-btn-border-radius: 0;
+  --bs-btn-hover-bg: hsl(204, 100%, 89%);
+  --bs-btn-hover-border-color: hsl(204, 96%, 81%);
+  --bs-btn-hover-color: hsl(204, 92%, 50%);
+}
+
+.slider {
+  padding: 0;
+}
+
+.carousel-item {
+  transition: transform 2s ease, opacity .5s ease-out;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "l3.sealmaster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "images.config.js",
+  "bin": {
+    "l3.sealmaster": "bin/images.js"
+  },
+  "type": "module",
+  "scripts": {
+    "images": "node ./bin/images.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fast-glob": "^3.2.12",
+    "fs": "^0.0.1-security",
+    "mime-types": "^2.1.35",
+    "path": "^0.12.7",
+    "sharp": "^0.31.3",
+    "trash": "^8.1.1"
+  }
+}
