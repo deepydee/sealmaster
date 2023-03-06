@@ -107,7 +107,7 @@ body {
 }
 
 .social .icon {
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .slider {
@@ -237,4 +237,12 @@ body {
 .icon-card .icon:hover {
   transform: scale(1.1);
   filter: none;
+}
+
+.blog-card a {
+  text-decoration: none;
+  color: var(--body-color);
+}
+.blog-card a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

@@ -117,6 +117,21 @@ export default {
           position: "center"
         },
       ]
+    },
+    // Blog
+    {
+      name: "Blog Images",
+      source: "./img/blog",
+      recursive: false,
+      sizes: [
+        {
+          name: "Desktop Resolution",
+          width: 350,
+          height: 200,
+          fit: "cover",
+          position: "center"
+        },
+      ]
     }
   ]
 }
