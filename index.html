@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <title>ТОО "СИЛМАСТЕР"</title>
@@ -117,7 +117,7 @@
   </header>
   <main>
     <section class="container-fluid slider">
-      <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="false">
         <ol class="carousel-indicators d-none d-md-flex">
           <li data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
           <li data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Second slide"></li>
@@ -192,14 +192,14 @@
         <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-          </button>
+        </button>
       </div>
     </section>
 
     <section class="container seals-production mb-5">
       <div class="row gy-5 mb-5">
         <div class="col-12 col-lg-9">
-          <h2 class="section-heading">Производство манжет</h2>
+          <h2 class="display-5 fw-bold mb-3">Производство манжет</h2>
           <p>Собственные производственные мощности, широкий выбор материалов и гибкость в перенастройке оборудования дают возможность производить уплотнения любой сложности.</p>
           <p>В процессе изготовления уплотнительных элементов применяется большой ассортимент материалов, например, таких как полиуретан (PU), маслобензостойкая резина (NBR), тефлон (PTFE), фторный каучук (FPM), синтетические эластомеры и иные материалы.</p>
         
@@ -318,10 +318,10 @@
       </div>
     </section>
 
-    <section class="container faq">
+    <section class="container faq mb-5">
       <div class="row">
         <div class="col-md-6">
-          <h2 class="section-heading">Ваши вопросы</h2>
+          <h2 class="display-5 fw-bold">Ваши вопросы</h2>
           <div class="accordion accordion-flush" id="accordionFaq">
 
             <div class="accordion-item">
@@ -525,7 +525,7 @@
         <div class="d-none d-md-flex col-md-6">
          <!-- Gallery -->
           <div class="row align-content-start">
-            <h3 class="section-heading">Наши будни</h3>
+            <!-- <h3 class="section-heading">Наши будни</h3> -->
             <div class="col-md-6 col-lg-4 mb-lg-0">
               <figure class="text-end">
                 <img
@@ -643,6 +643,82 @@
             </div>
           </div>
           <!-- Gallery -->
+        </div>
+      </div>
+    </section>
+
+    <section class="container testimonials">
+      <div class="row">
+        <div class="row text-center">
+          <div class="col-12">
+            <h2 class="display-5 fw-bold ">Отзывы</h2>
+            <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto" style="width: 100px; height:3px;">
+            <p class="p-text ">Вот что говорят наши клиенты</p> 
+          </div>
+        </div>
+
+        <div class="row align-items-md-center ">
+          
+          <div id="testimonialsCarousel" class="carousel carousel-dark slide mb-5" data-bs-ride="false">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+              <li data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" aria-label="Second slide"></li>
+              <li data-bs-target="#testimonialsCarousel" data-bs-slide-to="2" aria-label="Third slide"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+                  <div class="col-md-10">
+                    <div class="card t-card p-4">
+                      <span class="icon icon-quote"></span>
+                      <div class="card-body">
+                        <figure class="text-start">
+                          <blockquote class="blockquote">
+                            <p class="card-text">Добрый день всем. С этой компанией знаком год и с каждым разом при заказе они мне все больше нравятся. Первое: всегда на связи, приветливые. Быстро и граматно отвечают на вопросы. Второе: большой ассортимент в наличии и если чего-то нет в наличии они изготавливают на заказ по времени всего за 1 час. Я такое встречаю в первые. В настоящее время, как мы все знаем, что время это деньги. Спасибо огромное этой компании, развития вам. Спасибо, что вы есть!!!!</p>
+                          </blockquote>
+                          <figcaption class="blockquote-footer">
+                           Ринат
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-md-10">
+                    <div class="card t-card p-4">
+                      <span class="icon icon-quote"></span>
+                      <div class="card-body">
+                        <figure class="text-start">
+                          <blockquote class="blockquote">
+                            <p class="card-text">Хочу выразить огромнейшую благодарность этой фирме! обратился в данную фирму в прошлую субботу в 11 часов ночи за шлангом, у меня встал экскаватор в степи. Мастер приехал и сделал шланг при мне за 20 минут просто фантастика! Теперь только к вам)</p>
+                          </blockquote>
+                          <figcaption class="blockquote-footer">
+                           Марат
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+              </button>
+          </div>
         </div>
       </div>
     </section>

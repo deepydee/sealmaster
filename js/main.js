@@ -1,4 +1,4 @@
-const carouselElement = document.querySelector('#carousel');
+const carouselElement = document.getElementById('carousel');
 const carousel = new bootstrap.Carousel(carouselElement, {
   ride: false,
   interval: 10000,
@@ -6,6 +6,11 @@ const carousel = new bootstrap.Carousel(carouselElement, {
   pause: 'hover',
   keyboard: true,
 });
+
+// const carouselTestimonials = document.getElementById('testimonialsCarousel');
+// const carouselTest = new bootstrap.Carousel(carouselTestimonials, {
+
+// });
 
 const modalAskPhoneCall = document.getElementById('modalAskPhoneCall');
 const askForCallbackModal = new bootstrap.Modal(modalAskPhoneCall, {});
