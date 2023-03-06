@@ -649,22 +649,53 @@
 
     <section class="container testimonials">
       <div class="row">
-        <div class="row text-center">
+        <div class="row">
           <div class="col-12">
             <h2 class="display-5 fw-bold ">Отзывы</h2>
-            <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto" style="width: 100px; height:3px;">
-            <p class="p-text ">Вот что говорят наши клиенты</p> 
+            <p>Вы уже наш клиент? Оставьте свой отзыв, нам очень важно Ваше мнение о нас!</p> 
+            <p>
+              <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#shotTestimonialForm" aria-expanded="false" aria-controls="shotTestimonialForm">
+                Оставить отзыв
+              </a>
+            </p>
+            <div class="collapse" id="shotTestimonialForm">
+              <div class="col-md-6">
+                <form action="#">
+                  <div class="mb-3">
+                    <label for="setTestimonialName" class="form-label">Ваше имя*</label>
+                    <input type="text"
+                      class="form-control" name="setTestimonialName" id="setTestimonialName" aria-describedby="setTestimonialNameHelpId" placeholder="Ринат" required>
+                    <small id="setTestimonialNameHelpId" class="form-text text-muted d-none"></small>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="setTestimonialPhoto" class="form-label">Добавить фото</label>
+                    <input type="file" class="form-control" name="setTestimonialPhoto" id="setTestimonialPhoto" placeholder="Добавить фото" aria-describedby="setTestimonialFileHelpId">
+                    <div id="setTestimonialFileHelpId" class="form-text">Выберите изображение любого поддерживаемого формата</div>
+                  </div>
+
+                  <div class="mb-1">
+                    <label for="setTestimonialText" class="form-label">Текст отзыва*</label>
+                    <textarea class="form-control" name="setTestimonialText" id="setTestimonialText" rows="3" required></textarea>
+                  </div>
+
+                  <div class="mb-3">
+                    <small class="form-text text-muted">Поля, помеченные звездочкой (*) нужно обязательно заполнить</small>
+                  </div>
+
+                  <div class="mb-3">
+                  <button type="submit" class="btn btn-primary">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="row align-items-md-center ">
+        <div class="row">
           
           <div id="testimonialsCarousel" class="carousel carousel-dark slide mb-5" data-bs-ride="false">
-            <ol class="carousel-indicators">
-              <li data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
-              <li data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" aria-label="Second slide"></li>
-              <li data-bs-target="#testimonialsCarousel" data-bs-slide-to="2" aria-label="Third slide"></li>
-            </ol>
+
             <div class="carousel-inner" role="listbox">
 
               <div class="carousel-item active">
@@ -677,8 +708,8 @@
                           <blockquote class="blockquote">
                             <p class="card-text">Добрый день всем. С этой компанией знаком год и с каждым разом при заказе они мне все больше нравятся. Первое: всегда на связи, приветливые. Быстро и граматно отвечают на вопросы. Второе: большой ассортимент в наличии и если чего-то нет в наличии они изготавливают на заказ по времени всего за 1 час. Я такое встречаю в первые. В настоящее время, как мы все знаем, что время это деньги. Спасибо огромное этой компании, развития вам. Спасибо, что вы есть!!!!</p>
                           </blockquote>
-                          <figcaption class="blockquote-footer">
-                           Ринат
+                          <figcaption>
+                            <img src="https://source.unsplash.com/50x50/?businessman" class="rounded-circle img-responsive img-fluid me-2"> <b>Ринат</b>
                           </figcaption>
                         </figure>
                       </div>
