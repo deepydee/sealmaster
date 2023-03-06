@@ -103,6 +103,20 @@ export default {
           height: 510
         }
       ]
+    },
+    // Gallery
+    {
+      name: "Gallery Images",
+      source: "./img/gallery",
+      recursive: false,
+      sizes: [
+        {
+          name: "Desktop Resolution",
+          width: 160,
+          fit: "cover",
+          position: "center"
+        },
+      ]
     }
   ]
 }
