@@ -245,4 +245,15 @@ body {
 }
 .blog-card a:hover {
   text-decoration: underline;
+}
+
+.card-brand {
+  height: 180px;
+}
+.card-brand:hover img {
+  transform: scale(1.1);
+}
+.card-brand img {
+  height: 80px;
+  transition: all 0.4s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
