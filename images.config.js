@@ -132,6 +132,21 @@ export default {
           position: "center"
         },
       ]
+    },
+    // About
+    {
+      name: "About Images",
+      source: "./img/about",
+      recursive: false,
+      sizes: [
+        {
+          name: "Desktop Resolution",
+          width: 467,
+          height: 265,
+          fit: "cover",
+          position: "center"
+        },
+      ]
     }
   ]
 }
