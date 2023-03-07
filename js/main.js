@@ -19,3 +19,20 @@ const userPhoneInput = document.getElementById('userPhone');
 modalAskPhoneCall.addEventListener('shown.bs.modal', () => {
   userPhoneInput.focus();
 });
+
+const scrollBtn = document.getElementById('back-to-top');
+const btnVisibility = () => {
+  if (window.scrollY > 600) {
+    scrollBtn.style.visibility = 'visible';
+  } else {
+    scrollBtn.style.visibility = 'hidden';
+  }
+};
+
+document.addEventListener('scroll', btnVisibility);
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+});
