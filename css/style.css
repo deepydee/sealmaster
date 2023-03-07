@@ -57,6 +57,13 @@ body {
   color: var(--body-color);
 }
 
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
 .brand-logo {
   height: 40px;
 }
@@ -246,6 +253,7 @@ body {
 
 .icon-card {
   border: none;
+  --bs-card-bg: transparent;
 }
 .icon-card .icon {
   height: 3rem;
@@ -366,7 +374,8 @@ body {
   transform: scale(1.1);
 }
 
-.our-benefits {
+.our-benefits,
+.cta-section {
   background: hsl(205deg, 23%, 96%);
 }
 
@@ -400,4 +409,18 @@ body {
   right: 25px;
   transition: all 0.4s ease;
   visibility: hidden;
+}
+
+.phone-link {
+  text-decoration: none;
+  color: var(--body-color);
+}
+.phone-link:hover {
+  text-decoration: underline;
+}
+
+.cta-section .icon {
+  background-color: #fff;
+  width: 4rem;
+  height: 4rem;
 }/*# sourceMappingURL=style.css.map */
