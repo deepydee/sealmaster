@@ -296,8 +296,51 @@ body {
   }
 }
 
-// .left-offset-wrapper {
-//   &::before {
-//     transform: translateY(30px);
-//   }
-// }
+.good-card {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .overlay {
+    position: absolute;
+    background: hsla(212, 17%, 21%, 0.1);
+  
+    /* center overlay text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    h3 {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  
+    a {
+      text-decoration: none;
+      color: #fff;
+      z-index: 2;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .overlay-1 {
+   inset: 0;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}

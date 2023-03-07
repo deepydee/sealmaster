@@ -303,4 +303,44 @@ body {
   .img-about-wrapper .right-offset {
     right: 5%;
   }
+}
+
+.good-card {
+  position: relative;
+  overflow: hidden;
+}
+.good-card img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  transition: all 0.4s ease-in-out;
+}
+.good-card .overlay {
+  position: absolute;
+  background: hsla(212deg, 17%, 21%, 0.1);
+  /* center overlay text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.good-card .overlay h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.good-card .overlay a {
+  text-decoration: none;
+  color: #fff;
+  z-index: 2;
+}
+.good-card .overlay a:hover {
+  text-decoration: underline;
+}
+.good-card .overlay-1 {
+  inset: 0;
+}
+.good-card:hover img {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */

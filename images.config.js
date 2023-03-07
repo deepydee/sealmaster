@@ -147,6 +147,21 @@ export default {
           position: "center"
         },
       ]
+    },
+    // Goods
+    {
+      name: "Goods Images",
+      source: "./img/goods",
+      recursive: false,
+      sizes: [
+        {
+          name: "Desktop Resolution",
+          width: 265,
+          height: 265,
+          fit: "cover",
+          position: "center"
+        },
+      ]
     }
   ]
 }
