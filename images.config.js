@@ -162,6 +162,21 @@ export default {
           position: "center"
         },
       ]
-    }
+    },
+    // Repair
+    {
+      name: "Repair Images",
+      source: "./img/repair",
+      recursive: false,
+      sizes: [
+        {
+          name: "Desktop Resolution",
+          width: 265,
+          height: 265,
+          fit: "cover",
+          position: "center"
+        },
+      ]
+    },
   ]
 }
