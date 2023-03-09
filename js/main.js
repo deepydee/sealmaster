@@ -37,6 +37,55 @@ scrollBtn.addEventListener('click', () => {
   });
 });
 
-const year = new Date().getFullYear();
-const currentYearEl = document.getElementById('currentYear');
-currentYearEl.textContent = year;
+const renderCurrentYear = () => {
+  const now = new Date();
+  const year = now.getFullYear();
+  const currentYearEl = document.getElementById('currentYear');
+
+  currentYearEl.textContent = year;
+};
+
+const generateWorkingHoursList = () => {
+  const WORK_HOURS = [
+    "08:00 - 19:00",
+    "08:00 - 19:00",
+    "08:00 - 19:00",
+    "08:00 - 19:00",
+    "08:00 - 19:00",
+    "08:00 - 16:00",
+    "08:00 - 16:00",
+  ];
+
+  const WEEK_DAYS = [
+    "ВС",
+    "ПН",
+    "ВТ",
+    "СР",
+    "ЧТ",
+    "ПТ",
+    "СБ",
+  ];
+
+  const now = new Date();
+  const currentDay = now.getDay();
+  const whList = document.getElementById('schedule-list');
+
+  WORK_HOURS.forEach((el, idx) => {
+    let dayOfWeek;
+    let template;
+
+    if (idx === currentDay) {
+      dayOfWeek = 'Сегодня';
+      template = `<li class="text-end"><span class="me-3 today-list-active">${dayOfWeek}</span><span>${el}</span></li>`;
+      document.getElementById('whToggle').insertAdjacentHTML('beforeend', `<span class="me-3 today-list-active">${dayOfWeek}</span><span>${el}</span>`);
+    } else {
+      dayOfWeek = WEEK_DAYS[idx];
+      template = `<li class="text-end"><span class="me-3">${dayOfWeek}</span><span>${el}</span></li>`;
+    }
+
+    whList.insertAdjacentHTML('beforeend', template);
+  });
+};
+
+renderCurrentYear();
+generateWorkingHoursList();

@@ -549,8 +549,69 @@ header {
 
 .no-underline {
   text-decoration: none;
+  color: var(--body-color);
 
   &:hover {
-    text-decoration: underline;
+    color: var(--bs-link-color);
+    text-decoration: none;
+
+    .icon {
+      transform: scale(1.3);
+      filter: invert(30%) sepia(69%) saturate(4467%) hue-rotate(197deg) brightness(92%) contrast(98%);
+    }
   }
+}
+
+.work-hours-list {
+  list-style: none;
+}
+
+.today-list-active {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 42%;
+    right: -11px;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: green;
+  }
+}
+
+.contacts-footer {
+  position: relative;
+
+  .footer-contacts-card {
+    position: relative;
+    z-index: 1;
+  }
+
+  .contacts-footer-map {
+    min-height: 350px;
+
+    @media (min-width: 992px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+  }
+}
+
+.footer-links {
+  list-style: none;
+
+  a {
+    color: var(--body-color);
+
+    &:hover {
+      color: var(--bs-link-color);
+    }
+  }
+
 }
