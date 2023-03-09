@@ -36,3 +36,7 @@ scrollBtn.addEventListener('click', () => {
       behavior: 'smooth'
   });
 });
+
+const year = new Date().getFullYear();
+const currentYearEl = document.getElementById('currentYear');
+currentYearEl.textContent = year;
