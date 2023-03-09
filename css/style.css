@@ -367,6 +367,13 @@ header {
   filter: none;
 }
 
+.blog-card {
+  overflow: hidden;
+}
+.blog-card img {
+  background: #000;
+  transition: all 0.4s ease-in-out;
+}
 .blog-card a {
   text-decoration: none;
   color: var(--body-color);
@@ -378,12 +385,17 @@ header {
 .card-brand {
   height: 180px;
 }
-.card-brand:hover img {
-  transform: scale(1.1);
+.card-brand .card-img-wrapper {
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card-brand img {
-  height: 80px;
+  height: 100%;
   transition: all 0.4s ease-in-out;
+}
+.card-brand:hover img {
+  transform: scale(1.15);
 }
 
 .about {
@@ -522,4 +534,11 @@ header {
   background-color: #fff;
   width: 4rem;
   height: 4rem;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+.no-underline:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
