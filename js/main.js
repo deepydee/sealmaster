@@ -136,7 +136,7 @@ async function getReviews(url) {
 
       carousel.insertAdjacentHTML('beforeend', template);
     }
-
+    carousel.querySelector(':first-child').classList.add('active');
 
   } else {
     console.log('Ошибка HTTP: ' + response.status);
