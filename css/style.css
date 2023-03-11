@@ -629,7 +629,18 @@ header {
   color: var(--bs-link-color);
 }
 
+.testimonial-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.testimonial-name {
+  display: flex;
+  flex-direction: column;
+}
+
 .testimonial-date {
-  margin-left: 3px;
   font-size: 0.75rem;
 }/*# sourceMappingURL=style.css.map */

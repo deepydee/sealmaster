@@ -118,10 +118,13 @@ async function getReviews(url) {
                 <blockquote class="blockquote">
                   <p class="card-text" itemprop="reviewBody">${testimonial['text']}</p>
                 </blockquote>
-                <figcaption>
-                  <img src="${testimonial['user']['photo_preview_urls']['64x64']}" class="rounded-circle img-responsive img-fluid me-2"> <b itemprop="author">${testimonial['user']['first_name']}</b>
-                  <time datetime="${testimonial['date_created']}" class="testimonial-date text-muted">${testimonialCreated.toLocaleDateString('ru', lacateOptions)}</time>
-                  <meta itemprop="datePublished" content="${testimonial['date_created']}">
+                <figcaption class="testimonial-footer">
+                  <img src="${testimonial['user']['photo_preview_urls']['64x64']}" class="rounded-circle img-responsive img-fluid me-3">
+                  <div class="testimonial-name">
+                    <b itemprop="author">${testimonial['user']['first_name']}</b>
+                    <time datetime="${testimonial['date_created']}" class="testimonial-date text-muted">${testimonialCreated.toLocaleDateString('ru', lacateOptions)}</time>
+                    <meta itemprop="datePublished" content="${testimonial['date_created']}">
+                  </div>
                 </figcaption>
               </figure>
             </div>
