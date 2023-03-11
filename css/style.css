@@ -627,4 +627,9 @@ header {
 }
 .footer-links a:hover {
   color: var(--bs-link-color);
+}
+
+.testimonial-date {
+  margin-left: 3px;
+  font-size: 0.75rem;
 }/*# sourceMappingURL=style.css.map */
