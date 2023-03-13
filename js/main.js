@@ -1,17 +1,3 @@
-const carouselElement = document.getElementById('carousel');
-const carousel = new bootstrap.Carousel(carouselElement, {
-  ride: false,
-  interval: 10000,
-  touch: true,
-  pause: 'hover',
-  keyboard: true,
-});
-
-// const carouselTestimonials = document.getElementById('testimonialsCarousel');
-// const carouselTest = new bootstrap.Carousel(carouselTestimonials, {
-
-// });
-
 const modalAskPhoneCall = document.getElementById('modalAskPhoneCall');
 const askForCallbackModal = new bootstrap.Modal(modalAskPhoneCall, {});
 const userPhoneInput = document.getElementById('userPhone');
@@ -90,16 +76,12 @@ const generateWorkingHoursList = () => {
 renderCurrentYear();
 generateWorkingHoursList();
 
-const reviewsUrl = 'https://public-api.reviews.2gis.com/2.0/branches/70000001045235526/reviews?limit=12&is_advertiser=false&fields=reviews.is_verified&without_my_first_review=false&rated=true&sort_by=date_edited&key=37c04fe6-a560-4549-b459-02309cf643ad&locale=ru_KZ';
-
-getReviews(reviewsUrl);
-
 async function getReviews(url) {
   const response = await fetch(url);
 
   if (response.ok) {
     const json = await response.json();
-    console.log(json);
+    // console.log(json);
 
     const carousel = document.getElementById('testimonialsList');
 

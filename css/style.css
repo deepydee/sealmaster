@@ -63,6 +63,9 @@ header {
   top: 0;
   z-index: 10;
 }
+header .breadcrumb-container {
+  background-color: #fff;
+}
 
 .brand-logo {
   height: 40px;

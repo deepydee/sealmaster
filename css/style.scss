@@ -16,6 +16,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+
+  .breadcrumb-container {
+    background-color: #fff;
+  }
 }
 
 .brand-logo {

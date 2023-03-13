@@ -178,5 +178,19 @@ export default {
         },
       ]
     },
+    // Certificates
+    {
+      name: "Certificates Images",
+      source: "./img/certificates",
+      recursive: false,
+      sizes: [
+        {
+          name: "Desktop Resolution",
+          width: 270,
+          fit: "cover",
+          position: "center"
+        },
+      ]
+    },
   ]
 }
