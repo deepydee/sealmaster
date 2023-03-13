@@ -56,15 +56,28 @@ body {
   line-height: 1.6;
   color: var(--body-color);
 }
+body::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #99bff7;
+}
+body:hover::-webkit-scrollbar-thumb {
+  background: rgb(123, 161, 221);
+}
 
-header {
+.main-menu-header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10;
 }
-header .breadcrumb-container {
-  background-color: #fff;
+.main-menu-header .breadcrumb-container {
+  background-color: var(--bs-light);
 }
 
 .brand-logo {
@@ -646,4 +659,19 @@ header .breadcrumb-container {
 
 .testimonial-date {
   font-size: 0.75rem;
+}
+
+.blog-post-header-image img {
+  max-height: 550px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog-post-text {
+  font-size: 1.25rem;
+}
+
+.post-image {
+  border: 8px solid hsl(223deg, 90%, 92%);
 }/*# sourceMappingURL=style.css.map */
