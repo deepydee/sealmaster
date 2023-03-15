@@ -730,6 +730,14 @@ body {
   }
 }
 
+.card-description {
+  max-height: 150px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
 .article-views {
   position: relative;
   margin-left: 20px;
