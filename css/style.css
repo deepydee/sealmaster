@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* noto-sans-regular - cyrillic_latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -674,4 +675,48 @@ body:hover::-webkit-scrollbar-thumb {
 
 .post-image {
   border: 8px solid hsl(223deg, 90%, 92%);
+}
+
+.categories-list .list-group-item.active {
+  --bs-list-group-active-bg: hsl(219, 97%, 77%);
+  --bs-list-group-active-border-color: white;
+}
+.categories-list .list-group-item.active a {
+  transition: all 0.4s ease;
+}
+.categories-list .list-group-item.active a:hover {
+  color: #fff;
+}
+
+.article-published,
+.article-updated {
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+}
+.article-published::after,
+.article-updated::after {
+  position: absolute;
+  content: "•";
+  right: -10px;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.article-views {
+  position: relative;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.article-views::before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  left: -20px;
+  background-image: url("/img/icons/eye.svg");
 }/*# sourceMappingURL=style.css.map */

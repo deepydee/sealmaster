@@ -697,3 +697,54 @@ body {
 .post-image {
   border: 8px solid hsl(223, 90%, 92%);
 }
+
+.categories-list .list-group-item {
+  &.active {
+    --bs-list-group-active-bg: hsl(219, 97%, 77%);
+    --bs-list-group-active-border-color: white;
+
+    a {
+      transition: all .4s ease;
+
+      &:hover {
+        color: #fff;
+     }
+    }
+  }
+}
+
+.article-published,
+.article-updated {
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+
+  &::after {
+    position: absolute;
+    content: '\2022';
+    right: -10px;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    font-weight: 400;
+  }
+}
+
+.article-views {
+  position: relative;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &::before {
+    position: absolute;
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    // background-size: 1rem 1rem;
+    left: -20px;
+    background-image: url('/img/icons/eye.svg');
+
+  }
+}
